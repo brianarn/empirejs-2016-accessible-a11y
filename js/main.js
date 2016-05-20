@@ -3,9 +3,9 @@
   // (which I could have inlined in the HTML but this made authoring easier)
   var xhr = new XMLHttpRequest();
 
-  xhr.addEventListener('load', () => {
+  xhr.addEventListener('load', function () {
     // Pull the markdown for the presentation as plain text
-    var markdown = xhr.responseText;
+    var markdown = this.responseText;
 
     // Yank our loading slide
     document.querySelector('#loading').remove();
@@ -28,7 +28,7 @@
 
     // Now that the presentation markup is there, inject clones of our slide
     // footer into all of the content nodes.
-    document.querySelectorAll('.remark-slide-content').forEach(slide => {
+    document.querySelectorAll('.remark-slide-content').forEach(function (slide) {
       slide.appendChild(slideFooter.cloneNode(true));
     });
 
