@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  line-height: 2em;
+}
+
+.remark-slide-content .slide-footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+}
+
+.remark-slide .no-footer .slide-footer {
+  display: none;
+}
+
+.remark-slide .center ol {
+  display: inline-block;
+  margin: 10px auto;
+  text-align: left;
+}
