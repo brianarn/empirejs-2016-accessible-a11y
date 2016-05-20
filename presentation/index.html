@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -7,7 +7,8 @@
     <title>reveal.js</title>
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/theme/black.css">
+    <link rel="stylesheet" href="css/theme/sky.css">
+    <link rel="stylesheet" href="css/custom.css">
 
     <!-- Theme used for syntax highlighting of code -->
     <link rel="stylesheet" href="lib/css/zenburn.css">
@@ -24,8 +25,71 @@
   <body>
     <div class="reveal">
       <div class="slides">
-        <section>Slide 1</section>
-        <section>Slide 2</section>
+
+        <section>
+          <section class="center">
+            <h1>Accessible Accessibility</h1>
+            <p class="subtitle">Brian Sinclair, EmpireJS 2016</p>
+          </section>
+          <section class="center">
+            <h2>Who am I</h2>
+            <ul>
+              <li>Brian Sinclair</li>
+              <li>Software Engineer at DigitalOcean</li>
+              <li>Once did a ridiculously heavy a11y retrofit in a past life</li>
+            </ul>
+          </section>
+          <section class="center">
+            <h2>Agenda</h2>
+            <ol>
+              <li>Why do we care?</li>
+              <li>How do we know?</li>
+              <li>Where do I start?</li>
+            </ol>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Why do we care?</h1>
+          </section>
+          <section>
+            <h2>Improved UX</h2>
+            <p>Better accessibility helps everyone, not just the visually impaired</p>
+
+            <aside class="notes">
+              <p>Many people think of a11y as primarily for blind people, but it can improve things for many people.</p>
+              <ul>
+                <li>Those with color blindness</li>
+                <li>People with limited gross motor skills</li>
+                <li>Vi users who threw away their mouse.</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>It's THE LAW</h2>
+            <p>&nbsp;<!--omg spacer paragraph I'm horrible--></p>
+            <ul>
+              <li>Americans with Disabilities Act</li>
+              <li>Section 508</li>
+            </ul>
+
+            <aside class="notes">
+              <ul>
+                <li>1990: ADA was enacted, prohibiting discrimination by places of public accomodation</li>
+                <li>2005: National Federation of the Blind and Target tried to work it out</li>
+                <li>2006: NFB sued Target for their inaccessible website, citing it as a place of public accomodation</li>
+                <li>2008: Settlement reached, $6mil settlement fund was established</li>
+              </ul>
+
+              <p>Section 508 matters if you ever care to sell services to the US Gov't</p>
+            </aside>
+          </section>
+        </section>
+
+        <footer>
+          Accessible Accessibility &ndash; Brian Sinclair &ndash; #acca11y #empirejs
+        </footer>
       </div>
     </div>
 
@@ -35,7 +99,16 @@
     <script>
       // More info https://github.com/hakimel/reveal.js#configuration
       Reveal.initialize({
+        width: 1920,
+        height: 1080,
+
+        controls: false,
+        progress: false,
         history: true,
+        center: false,
+        previewLinks: true,
+        transition: 'slide',
+        transitionSpeed: 'fast',
 
         // More info https://github.com/hakimel/reveal.js#dependencies
         dependencies: [

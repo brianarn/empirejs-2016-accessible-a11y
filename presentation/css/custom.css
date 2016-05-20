@@ -1,0 +1,19 @@
+/* Overriding Sky theme bits */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+  /*font-family: "Open Sans", sans-serif;*/
+  font-weight: bold;
+}
+
+/* Custom footer */
+.reveal .slides footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.75em;
+}
+
+/* Other custom classes */
+.reveal .slides .subtitle {
+  font-size: 2em;
+  padding-top: 0.5em;
+}
