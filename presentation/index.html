@@ -27,25 +27,41 @@
       <div class="slides">
 
         <section>
-          <section class="center">
+          <section>
             <h1>Accessible Accessibility</h1>
             <p class="subtitle">Brian Sinclair, EmpireJS 2016</p>
           </section>
-          <section class="center">
+          <section>
             <h2>Who am I</h2>
             <ul>
               <li>Brian Sinclair</li>
               <li>Software Engineer at DigitalOcean</li>
-              <li>Once did a ridiculously heavy a11y retrofit in a past life</li>
+              <li>More experience with a11y retrofitting than I'd like</li>
             </ul>
           </section>
-          <section class="center">
+          <section>
             <h2>Agenda</h2>
             <ol>
+              <li>What is accessibility anyways?</li>
               <li>Why do we care?</li>
               <li>How do we know?</li>
-              <li>Where do I start?</li>
+              <li>Where do we start?</li>
             </ol>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>What is accessibility anyways?</h1>
+          </section>
+          <section>
+            <h2>Accessibility</h2>
+            <p>Often abbreviated as <code>a11y</code></p>
+            <p>All about varying ability/disability</p>
+
+            <aside class="notes">
+              <p>a11y is seriously "a, 11 characters, y". Seriously.</p>
+            </aside>
           </section>
         </section>
 
@@ -54,8 +70,17 @@
             <h1>Why do we care?</h1>
           </section>
           <section>
+            <h2>The web is pervasive</h2>
+
+            <aside class="notes">
+              <p>Think about how much you use the internet on a daily basis.</p>
+              <p>Now imagine that for some reason, you're unable to use a mouse.</p>
+              <p>How usable do you think things are?</p>
+            </aside>
+          </section>
+          <section>
             <h2>Improved UX</h2>
-            <p>Better accessibility helps everyone, not just the visually impaired</p>
+            <p>Better accessibility helps <strong>everyone</strong></p>
 
             <aside class="notes">
               <p>Many people think of a11y as primarily for blind people, but it can improve things for many people.</p>
@@ -87,6 +112,196 @@
           </section>
         </section>
 
+        <section>
+          <section>
+            <h1>How do we know?</h1>
+
+            <aside class="notes">
+              <p>How are we able to tell if we're accessible? What metrics are there? How do we measure things?</p>
+            </aside>
+          </section>
+          <section>
+            <h2>Principles &amp; Guidelines</h2>
+            <h3>Principles: POUR</h3>
+            <h3>Guidelines: WCAG 2.0</h3>
+          </section>
+          <section>
+            <h2>POUR</h2>
+            <ul>
+              <li>Perceivable</li>
+              <li>Operable</li>
+              <li>Understandable</li>
+              <li>Robust</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Perceivable</h2>
+            <p>Can everyone consume your content?</p>
+
+            <aside class="notes">
+              <p>Examples:</p>
+              <ul>
+                <li>Text alternatives for non-text content</li>
+                <li>Captions, other alternatives for multimedia content</li>
+                <li>Visible to users of varying levels of sight</li>
+                <li>Functions well with varying ATs</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>Operable</h2>
+            <p>How well does your app work without a mouse?</p>
+
+            <aside class="notes">
+              <p>Examples:</p>
+              <ul>
+                <li>Keyboard navigation (tab, spacebar, enter, etc)</li>
+                <li>Touch interfaces</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>Understandable</h2>
+            <p>Are they getting what you're putting down?</p>
+
+            <aside class="notes">
+              <p>Okay, maybe a bit snarky, but I hope it helps make the point in a way.</p>
+              <ul>
+                <li>Is the content readable? Free of typos?</li>
+                <li>Is the content succinct? Long-form content can be fatiguing to users of ATs.</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>Robust</h2>
+            <p>Write once, accessible everywhere</p>
+
+            <aside class="notes">
+              <p>The idea here is that it works well in a broad variety of environments. Different browsers, ATs, etc.</p>
+            </aside>
+          </section>
+          <section>
+            <h2>Guidelines: WCAG 2.0</h2>
+            <p>POUR codified into rule sets</p>
+            <p>Three tiers: A, AA, AAA</p>
+          </section>
+          <section>
+            <h2>Example levels</h2>
+            <ul>
+              <li>3.1.1 (A): Language of page can be programmatically determined</li>
+              <li>3.1.2 (AA): Language of passages / phrases can be programmatically determined, with some exceptions</li>
+              <li>3.1.3 (AAA): Mechanism available to identify words or phrases used in an unusual way (jargon etc)</li>
+            </ul>
+
+            <aside class="notes">
+              <p>This slide is quite verbose, but the concept is there. These rules clearly iterate on one another.</p>
+              <p>Not all WCAG guidelines work this way, but this particular example is really nice for demonstrating the iteration.</p>
+              <p>Another example: Captions on video.</p>
+              <ul>
+                <li>A: Having text captions for pre-recorded audio content.</li>
+                <li>AA: Having text captions provided for live audio content.</li>
+                <li>AAA: Sign language interpretation for pre-recorded audio content.</li>
+              </ul>
+            </aside>
+          </section>
+          <section>
+            <h2>Where should we be?</h2>
+            <ul>
+              <li>Level A: Bare minimum</li>
+              <li>Level AA: Great!</li>
+              <li>Level AAA: Good luck with that</li>
+            </ul>
+
+            <aside class="notes">
+              <p>Most groups are happy to pursue AA. It's pretty simple to get to A without much effort. Mostly.</p>
+            </aside>
+          </section>
+          <section>
+            <h2>WCAG quickref</h2>
+            <p><a href="https://www.w3.org/WAI/WCAG20/quickref/">WCAG 2.0 Quick Reference</a></p>
+
+            <aside class="notes">
+              <p>Adjust the filters as appropriate for what you're doing, probably just Level A to start</p>
+            </aside>
+          </section>
+        </section>
+
+        <section>
+          <section>
+            <h1>Where do we start?</h1>
+          </section>
+          <section>
+            <h2>Tools</h2>
+            <ul>
+              <li><a href="http://wave.webaim.org/">WAVE by WebAim</a></li>
+              <li><a href="http://khan.github.io/tota11y/">Tota11y</a></li>
+              <li><a href="http://pa11y.org/">Pa11y</a></li>
+            </ul>
+
+            <aside class="notes">
+              <p>This is just a sampling, there's other tools out there, some free, some paid.</p>
+            </aside>
+          </section>
+          <section>
+            <h2>Techniques</h2>
+            <ul>
+              <li>Use semantic markup</li>
+              <li>Check your colors</li>
+              <li>ARIA</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Semantic Markup</h2>
+          </section>
+          <section data-transition="none-out">
+            <h3>LINKS ARE NOT BUTTONS</h3>
+            <p>Different semantics</p>
+
+            <aside class="notes">
+              <p>Browsers and ATs will represent links and buttons very differently.</p>
+              <p>Links are intended for navigation, buttons are intended for interactions. Use the appropriate element.</p>
+            </aside>
+          </section>
+          <section data-transition="none-in none-out">
+            <h3>LINKS ARE NOT BUTTONS</h3>
+            <p>Buttons can be styled, don't be lazy</p>
+          </section>
+          <section data-transition="none-in">
+            <h3>LINKS ARE NOT BUTTONS</h3>
+            <p>Make sure to set <code>type="button"</code> for pure JS interaction</p>
+          </section>
+          <section>
+            <h3>SPANS ARE NOT BUTTONS</h3>
+            <p>NEITHER ARE DIVS</p>
+            <p>Use the right element for the job!</p>
+          </section>
+          <section>
+            <h3>Put <code>alt</code> attributes on images</h3>
+            <p><code>alt=""</code> is ok!</p>
+
+            <aside class="notes">
+              <p>ATs will recognize an empty alt to mean that content is meant for presentation, and will skip it</p>
+            </aside>
+          </section>
+          <section>
+            <h2>Colors</h2>
+            <p>Oft ignored, but important!</p>
+          </section>
+          <section>
+            <h3>Color Usage</h3>
+            <ul>
+              <li>Color should not be the only meaningful visual</li>
+              <li>Contrast matters!</li>
+            </ul>
+
+            <aside class="notes">
+              <p>This is basically WCAG 2.0 section 1.4</p>
+              <p>Contrast of 4.5:1 for normal text, 3:1 for large text (18pt and up)</p>
+              <p>Logos are considered exempt from contrast rules</p>
+            </aside>
+          </section>
+        </section>
+
         <footer>
           Accessible Accessibility &ndash; Brian Sinclair &ndash; #acca11y #empirejs
         </footer>
@@ -105,7 +320,6 @@
         controls: false,
         progress: false,
         history: true,
-        center: false,
         previewLinks: true,
         transition: 'slide',
         transitionSpeed: 'fast',
