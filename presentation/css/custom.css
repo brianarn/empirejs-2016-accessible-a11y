@@ -71,7 +71,6 @@
 }
 .reveal .slides section .fragment.bold-current.current-fragment {
   font-weight: bold;
-  font-size: 1.3em;
 }
 .reveal .slides section .fragment.highlight-current {
   opacity: 1;
