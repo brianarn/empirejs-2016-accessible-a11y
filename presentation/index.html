@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/custom.css">
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <!-- <link rel="stylesheet" href="lib/css/zenburn.css"> -->
+    <link rel="stylesheet" href="css/hljs-default.css">
 
     <!-- Printing and PDF exports -->
     <script>
@@ -327,18 +328,18 @@
           </section>
           <section data-transition="slide-in none-out">
             <h3>Example: Fixing a button</h3>
-            <pre><code>
-  &lt;a class="close-button" href="javascript:void(0);"&gt;
+            <pre><code data-noescape>
+  &lt;<span class="fragment highlight-current" data-fragment-index="1">a</span> class="close-button" <span class="fragment highlight-current" data-fragment-index="2">href="javascript:void(0);"</span>&gt;
     &lt;span class="icon icon-close-light"&gt;&lt;/span&gt;
-  &lt;/a&gt;
+  &lt;/<span class="fragment highlight-current" data-fragment-index="1">a</span>&gt;
             </code></pre>
           </section>
           <section data-transition="none-in slide-out">
             <h3>Example: Fixing a button</h3>
-            <pre><code>
-  &lt;button class="close-button" aria-label="close"&gt;
+            <pre><code data-noescape>
+  &lt;<span class="fragment highlight-current" data-fragment-index="1">button</span> class="close-button" <span class="fragment highlight-current" data-fragment-index="2">aria-label="close"</span>&gt;
     &lt;span class="icon icon-close-light"&gt;&lt;/span&gt;
-  &lt;/button&gt;
+  &lt;/<span class="fragment highlight-current" data-fragment-index="1">button</span>&gt;
             </code></pre>
           </section>
           </section>
@@ -388,7 +389,7 @@
           { src: 'plugin/markdown/marked.js' },
           { src: 'plugin/markdown/markdown.js' },
           { src: 'plugin/notes/notes.js', async: true },
-          //{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
         ]
       });
     </script>
