@@ -72,6 +72,19 @@
   padding-top: 0.5em;
 }
 
+.reveal .slides .intro img {
+  float: left;
+  border: 0;
+  background: none;
+  box-shadow: none;
+  float: left;
+  vertical-align: middle;
+}
+
+.reveal .slides .intro ul {
+  margin-top: 3em;
+}
+
 /* Custom transitions */
 .reveal .slides section .fragment.bold-current {
   opacity: 1;
